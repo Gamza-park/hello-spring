@@ -40,8 +40,8 @@ public class MemberRepositoryTest {
 
         final var result = repository.findByName("spring1").get();
 
-        assertThat(result).isEqualTo(member1);
-        assertThat(result).isNotEqualTo(member2);
+        assertThat(result.getName()).isEqualTo(member1.getName());
+        assertThat(result.getName()).isNotEqualTo(member2.getName());
     }
 
     @Test
