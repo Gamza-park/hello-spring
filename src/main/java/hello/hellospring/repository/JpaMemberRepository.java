@@ -6,11 +6,11 @@ import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
 
-public class JpaMembetRepository implements MemberRepository{
+public class JpaMemberRepository implements MemberRepository{
 
     private final EntityManager em;
 
-    public JpaMembetRepository(EntityManager em) {
+    public JpaMemberRepository(EntityManager em) {
         this.em = em;
     }
 
